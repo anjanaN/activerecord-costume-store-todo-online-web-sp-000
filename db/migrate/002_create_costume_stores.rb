@@ -4,8 +4,8 @@ class CreateCostumeStores < ActiveRecord::Migration[4.2]
     create_table :candies do |t|
       t.string :name
       t.string :location
-      t.string :image_url
-      t.string :size
+      t.integer :costume_inventory
+      t.integer :num_of_employees
       t.timestamps
     end
   end
